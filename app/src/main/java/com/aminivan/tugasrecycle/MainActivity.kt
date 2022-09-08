@@ -6,20 +6,37 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.aminivan.tugasrecycle.adapter.AdapterProvinsi
 import com.aminivan.tugasrecycle.adapter.DataProvinsi
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        setSumatra()
-        setKalimantan()
-        setJawa()
-        setBali()
-        setSulawesi()
-        setMaluku()
-        setPapua()
+        cvSumatra.setOnClickListener(){
+            setSumatra()
+        }
+
+        cvKalimantan.setOnClickListener(){
+            setKalimantan()
+        }
+        cvJawa.setOnClickListener(){
+            setJawa()
+        }
+        cvNusa.setOnClickListener(){
+            setBali()
+        }
+        cvSulawesi.setOnClickListener(){
+            setSulawesi()
+        }
+        cvMaluku.setOnClickListener(){
+            setMaluku()
+        }
+        cvPapua.setOnClickListener(){
+            setPapua()
+        }
     }
+
 
     fun setSumatra(){
         val listProvinsi = arrayListOf(
@@ -36,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycleSumatra)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
@@ -50,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycleKalimantan)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
@@ -68,7 +85,7 @@ class MainActivity : AppCompatActivity() {
             )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycleJawa)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
@@ -82,7 +99,7 @@ class MainActivity : AppCompatActivity() {
             )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycleBali)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
@@ -98,7 +115,7 @@ class MainActivity : AppCompatActivity() {
             )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycleSulawesi)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
@@ -111,7 +128,7 @@ class MainActivity : AppCompatActivity() {
             )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recycleMaluku)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
@@ -127,7 +144,7 @@ class MainActivity : AppCompatActivity() {
             )
         val adapter = AdapterProvinsi(listProvinsi)
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclePapua)
+        val recyclerView = findViewById<RecyclerView>(R.id.recycleMain)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
     }
