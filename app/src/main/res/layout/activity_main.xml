@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Sumatra"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleSumatra"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Kalimantan"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleKalimantan"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Jawa"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleJawa"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Nusa Tenggara dan Bali"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleBali"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Sulawesi"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleSulawesi"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulau Maluku"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleMaluku"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Papua"
+                android:textSize="25sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclePapua"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
